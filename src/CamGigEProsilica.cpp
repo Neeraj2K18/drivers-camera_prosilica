@@ -14,7 +14,9 @@
 #include <unistd.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
-
+#include <iostream>
+#include <math.h>
+ 
 //maximal number of cameras connected to the pc
 //increase the value if you have more cameras connected
 const int kMaxNumberOfCameras = 16;
