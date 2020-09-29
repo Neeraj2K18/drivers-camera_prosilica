@@ -88,6 +88,10 @@ pkg_check_modules(CAM_INTERFACE REQUIRED "camera_interface")
 include_directories(${CAM_INTERFACE_INCLUDE_DIRS})
 link_directories(${CAM_INTERFACE_LIBDIR})
 
+pkg_check_modules(BASE_TYPES REQUIRED "base-types")
+include_directories(${BASE_TYPES_INCLUDE_DIRS})
+link_directories(${BASE_TYPES_LIBDIR})
+
 #pkg_check_modules(OPENCV REQUIRED "opencv")
 #include_directories(${OPENCV_INCLUDE_DIRS})
 #link_directories(${OPENCV_LIBDIR})
